@@ -1,0 +1,261 @@
+table 'Data Professional Survey'
+	lineageTag: 7e03c140-53c5-46ab-b354-5ea1d6dc316c
+
+	column 'Unique ID'
+		dataType: string
+		lineageTag: 692dcbe8-62a0-4a6c-8b38-c26f4c74dc18
+		summarizeBy: none
+		sourceColumn: Unique ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 59266658-027c-4742-96d3-ce67e34939d1
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Taken (America/New_York)'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: df8d58f0-5350-4e1b-93d8-b0f96afe2386
+		summarizeBy: none
+		sourceColumn: Date Taken (America/New_York)
+
+		variation Variation
+			isDefault
+			relationship: 516e3705-2705-414a-940b-8dc586e044b6
+			defaultHierarchy: LocalDateTable_4ccb1e77-d367-4272-809d-d3655ef7bc95.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Time Taken (America/New_York)'
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: fe1f0ccc-ae4b-4da7-a1c5-abb624edeb45
+		summarizeBy: none
+		sourceColumn: Time Taken (America/New_York)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Browser
+		dataType: string
+		lineageTag: 34c86db1-00bd-4455-b760-854c680ba979
+		summarizeBy: none
+		sourceColumn: Browser
+
+		annotation SummarizationSetBy = Automatic
+
+	column OS
+		dataType: string
+		lineageTag: eac77fb3-0a96-44a1-97ad-2eae818c2527
+		summarizeBy: none
+		sourceColumn: OS
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 2beec5da-e886-4c40-8793-fc7dd36d09e1
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: d64f424a-6c1b-4fe0-8a37-ee734678ef44
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Referrer
+		dataType: string
+		lineageTag: 3c6b2226-d58e-4139-a78c-3835a96001e0
+		summarizeBy: none
+		sourceColumn: Referrer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Spent'
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 98db50de-109e-4074-8c76-679009799eb3
+		summarizeBy: none
+		sourceColumn: Time Spent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Q1 - Which Title Best Fits your Current Role?'
+		dataType: string
+		lineageTag: babea4d4-ba53-4cc0-bcb2-1cd656ba5258
+		summarizeBy: none
+		sourceColumn: Q1 - Which Title Best Fits your Current Role?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q2 - Did you switch careers into Data?'
+		dataType: string
+		lineageTag: ba08a63b-01ac-41ed-b303-1f2d0193fc90
+		summarizeBy: none
+		sourceColumn: Q2 - Did you switch careers into Data?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q3 - Current Yearly Salary (in USD)'
+		dataType: string
+		lineageTag: 7cf30cf6-fb84-4900-8333-728985035d90
+		summarizeBy: none
+		sourceColumn: Q3 - Current Yearly Salary (in USD)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q4 - What Industry do you work in?'
+		dataType: string
+		lineageTag: f5ab6c28-892c-4ec8-9ad7-7a44f686871b
+		summarizeBy: none
+		sourceColumn: Q4 - What Industry do you work in?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q5 - Favorite Programming Language'
+		dataType: string
+		lineageTag: d533e6d4-8069-4e6b-8ef3-c23d46043e9d
+		summarizeBy: none
+		sourceColumn: Q5 - Favorite Programming Language
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q6 - How Happy are you in your Current Position with the following? (Salary)'
+		dataType: int64
+		formatString: 0
+		lineageTag: a63bdee8-7611-4de0-8ff8-ab5300c1b25d
+		summarizeBy: sum
+		sourceColumn: Q6 - How Happy are you in your Current Position with the following? (Salary)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 13b0d8c1-2e18-4454-b76a-0a32c460907c
+		summarizeBy: sum
+		sourceColumn: Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q6 - How Happy are you in your Current Position with the following? (Coworkers)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b765ffd-abd2-497e-a463-9e0c7b696fe3
+		summarizeBy: sum
+		sourceColumn: Q6 - How Happy are you in your Current Position with the following? (Coworkers)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q6 - How Happy are you in your Current Position with the following? (Management)'
+		dataType: int64
+		formatString: 0
+		lineageTag: acd08d7b-78a9-462f-a4d2-c44678eb3626
+		summarizeBy: sum
+		sourceColumn: Q6 - How Happy are you in your Current Position with the following? (Management)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8aa1e87a-afe8-43ca-88c7-1dd7fe6efcaf
+		summarizeBy: sum
+		sourceColumn: Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q6 - How Happy are you in your Current Position with the following? (Learning New Things)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ca8b0cf-892f-4423-ad70-9a120ca557ab
+		summarizeBy: sum
+		sourceColumn: Q6 - How Happy are you in your Current Position with the following? (Learning New Things)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q7 - How difficult was it for you to break into Data?'
+		dataType: string
+		lineageTag: ef8d92e0-4b38-4caa-8700-fdc54062d0c6
+		summarizeBy: none
+		sourceColumn: Q7 - How difficult was it for you to break into Data?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q8 - If you were to look for a new job today, what would be the most important thing to you?'
+		dataType: string
+		lineageTag: fd86527e-a717-4837-922b-1887af89313e
+		summarizeBy: none
+		sourceColumn: Q8 - If you were to look for a new job today, what would be the most important thing to you?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q9 - Male/Female?'
+		dataType: string
+		lineageTag: 54896ba7-a18a-4b4f-ab57-ab56e7c63767
+		summarizeBy: none
+		sourceColumn: Q9 - Male/Female?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q10 - Current Age'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4cc999db-a3eb-422f-9182-e6b8a38ef141
+		summarizeBy: sum
+		sourceColumn: Q10 - Current Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q11 - Which Country do you live in?'
+		dataType: string
+		lineageTag: bc4dee20-56f3-46ba-9989-1a5287295f1a
+		summarizeBy: none
+		sourceColumn: Q11 - Which Country do you live in?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q12 - Highest Level of Education'
+		dataType: string
+		lineageTag: 9c25edc2-6865-4b0b-9d8c-ba6490f43825
+		summarizeBy: none
+		sourceColumn: Q12 - Highest Level of Education
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Q13 - Ethnicity'
+		dataType: string
+		lineageTag: ade447f5-de78-4da7-8753-360764431dec
+		summarizeBy: none
+		sourceColumn: Q13 - Ethnicity
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Data Professional Survey' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\HP\Downloads\Power BI - Final Project.xlsx"), null, true),
+				    #"Data Professional Survey_Sheet" = Source{[Item="Data Professional Survey",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Data Professional Survey_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Unique ID", type text}, {"Email", type text}, {"Date Taken (America/New_York)", type date}, {"Time Taken (America/New_York)", type time}, {"Browser", type text}, {"OS", type text}, {"City", type text}, {"Country", type text}, {"Referrer", type text}, {"Time Spent", type time}, {"Q1 - Which Title Best Fits your Current Role?", type text}, {"Q2 - Did you switch careers into Data?", type text}, {"Q3 - Current Yearly Salary (in USD)", type text}, {"Q4 - What Industry do you work in?", type text}, {"Q5 - Favorite Programming Language", type text}, {"Q6 - How Happy are you in your Current Position with the following? (Salary)", Int64.Type}, {"Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)", Int64.Type}, {"Q6 - How Happy are you in your Current Position with the following? (Coworkers)", Int64.Type}, {"Q6 - How Happy are you in your Current Position with the following? (Management)", Int64.Type}, {"Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)", Int64.Type}, {"Q6 - How Happy are you in your Current Position with the following? (Learning New Things)", Int64.Type}, {"Q7 - How difficult was it for you to break into Data?", type text}, {"Q8 - If you were to look for a new job today, what would be the most important thing to you?", type text}, {"Q9 - Male/Female?", type text}, {"Q10 - Current Age", Int64.Type}, {"Q11 - Which Country do you live in?", type text}, {"Q12 - Highest Level of Education", type text}, {"Q13 - Ethnicity", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
