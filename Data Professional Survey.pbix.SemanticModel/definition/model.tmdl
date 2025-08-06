@@ -1,9 +1,22 @@
 model Model
 	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
 
 annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.145.1602.0 (25.07)+10647c9fa319b5e39936cdb21328038c371d1fe4
+
+annotation PBI_QueryOrder = ["Data Professional Survey"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table 'Data Professional Survey'
+ref table DateTableTemplate_0c4e5ba6-bba8-4d11-8a9f-a627b09eae28
+ref table LocalDateTable_4ccb1e77-d367-4272-809d-d3655ef7bc95
 
 ref cultureInfo en-US
 
