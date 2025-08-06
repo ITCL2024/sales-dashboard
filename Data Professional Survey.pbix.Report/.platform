@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Data Professional Survey.pbix"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "15d5942a-15c6-4d09-ae70-6f1a8412fc06"
+  }
+}
